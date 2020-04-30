@@ -18,6 +18,8 @@
 #include "coordinates/Geodetic.h"
 #include "coordinates/Tile.h"
 
+namespace hypatia {
+
 class CoordOps {
 public:
     
@@ -338,3 +340,4 @@ public:
     static double positionAngle( const Vector3& _pos, const Vector3& _dir );
 };
 
+}

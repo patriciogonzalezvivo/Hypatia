@@ -3,6 +3,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 Galactic::Galactic() : m_radius(1.0) {
 }
 

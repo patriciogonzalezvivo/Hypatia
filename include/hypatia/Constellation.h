@@ -4,6 +4,8 @@
 
 #include <vector>
 
+namespace hypatia {
+
 class Constellation {
 public:
 
@@ -37,4 +39,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Constellation& c) {
     strm << c.getName() << " (" << c.getAbbreviation() << "), ";
     strm << c.getEquatorialCentroid();
     return strm;
+}
+
 }

@@ -7,6 +7,8 @@
 #include "hypatia/Satellite.h"
 #include "hypatia/CoordOps.h"
 
+using namespace hypatia;
+
 Satellite::Satellite(): m_name("NAN") {
     m_bodyId = SATELLITE;
 }

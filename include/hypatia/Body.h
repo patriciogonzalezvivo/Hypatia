@@ -16,6 +16,8 @@
 
 #include "Observer.h"
 
+namespace hypatia {
+
 enum BodyId {
     NAB=-1, // NotABody
     SUN=0,
@@ -79,4 +81,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Body& b) {
     }
     
     return strm;
+}
+
 }

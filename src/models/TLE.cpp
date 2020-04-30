@@ -13,6 +13,8 @@
 #include <sstream>
 #include <locale>
 
+using namespace hypatia;
+
 //  0.      Card number:                        0 Must be 1
 //  1.      Blank:                              1 Must be a blank space.
 //  2-6.    Satellite or USSTRATCOM number:     2-5 must be either an alphanumeric character or a blank space.

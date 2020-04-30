@@ -20,6 +20,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+using namespace hypatia;
+
 // a list of terms needed to do lunar calcs data extracted from vsop.bin file
 //----------------------------------------------------------------------------
 

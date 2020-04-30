@@ -3,6 +3,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 Vector2::Vector2() : x(0.0), y(0.0) {
 }
 

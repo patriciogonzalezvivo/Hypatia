@@ -3,6 +3,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 void ProjOps::toXY( ProjId _id, double _alt, double _az, double _width, double _height, double &_x, double &_y ) {
     switch(_id) {
         case POLAR: ProjOps::toPolar(_alt, _az, _width, _height, _x, _y);

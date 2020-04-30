@@ -9,7 +9,11 @@
 #include <stdexcept>
 #include <string>
 
+namespace hypatia {
+
 class Exception : public std::runtime_error {
 public:
     Exception(const char* message) : runtime_error(message) { }
 };
+
+}

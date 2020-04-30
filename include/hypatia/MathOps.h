@@ -9,6 +9,8 @@
 #pragma once
 #undef PI
 
+namespace hypatia {
+
 enum DISTANCE_UNIT {
     KM, AU, LY, PC
 };
@@ -220,3 +222,5 @@ struct MathOps {
     static double clamp( double _x, double _low, double _high);
 
 };
+
+}

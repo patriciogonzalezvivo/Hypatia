@@ -7,6 +7,8 @@
 
 #include "../primitives/Vector3.h"
 
+namespace hypatia {
+
 /**
  * @brief Stores an Earth-centered inertial position for a particular time.
  */
@@ -34,3 +36,4 @@ inline std::ostream& operator<<(std::ostream& strm, const ECI& e) {
     return strm;
 };
 
+}

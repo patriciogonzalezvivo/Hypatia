@@ -11,6 +11,8 @@
 
 #pragma once
 
+namespace hypatia {
+
 #define N_COEFFS 36
 #define XEPHEM
 
@@ -24,3 +26,4 @@ public:
     static void calcAllLocs (double& _lon, double& _lat, double& _r, const double _jcentury);
 };
 
+}

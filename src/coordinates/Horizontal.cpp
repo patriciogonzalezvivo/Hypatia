@@ -2,6 +2,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 Horizontal::Horizontal () {
 }
 

@@ -5,6 +5,8 @@
 
 #include "../primitives/Vector3.h"
 
+namespace hypatia {
+
 class Equatorial : public Polar {
 public:
     Equatorial();
@@ -25,4 +27,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Equatorial& p) {
     strm << "ra: " << std::setw(12) << MathOps::formatAngle(p.getRightAscension(DEGS), DEGS, H_M_Ss);
     strm << ", dec: " << std::setw(12) << MathOps::formatAngle(p.getDeclination(DEGS), DEGS, D_M_Ss);
     return strm;
+}
+
 }

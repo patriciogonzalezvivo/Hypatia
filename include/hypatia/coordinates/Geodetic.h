@@ -3,6 +3,8 @@
 #include "../primitives/Vector3.h"
 #include "UTM.h"
 
+namespace hypatia {
+
 class Geodetic : public Polar {
 public:
     Geodetic();
@@ -30,3 +32,5 @@ inline std::ostream& operator<<(std::ostream& strm, const Geodetic& p) {
 
     return strm;
 };
+
+}

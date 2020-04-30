@@ -14,16 +14,16 @@ int main(int argc, char **argv) {
     double lng = -73.968285;
     int zoom = 16;
 
-    Geodetic loc = Geodetic(lng, lat, 0.0, DEGS, KM);
-    std::cout << loc.getLongitude(DEGS) << "," << loc.getLatitude(DEGS) << std::endl;
+    hypatia::Geodetic loc = hypatia::Geodetic(lng, lat, 0.0, hypatia::DEGS, hypatia::KM);
+    std::cout << loc.getLongitude(hypatia::DEGS) << "," << loc.getLatitude(hypatia::DEGS) << std::endl;
 
-    UTM utm = loc.getUTM();
+    hypatia::UTM utm = loc.getUTM();
     std::cout << "utm: " << utm << std::endl;
 
-    Vector2 mercator = ProjOps::toMercator(loc);
+    hypatia::Vector2 mercator = hypatia::ProjOps::toMercator(loc);
     std::cout << "Mercator: " << mercator << std::endl;
 
-    Tile tile = CoordOps::toTile(loc, zoom);
+    hypatia::Tile tile = hypatia::CoordOps::toTile(loc, zoom);
     std::cout << tile << std::endl;
 
     std::cout << "Up     : " << tile.up() << std::endl;
@@ -43,22 +43,22 @@ int main(int argc, char **argv) {
     std::cout << "location: " << tile.getGeodetic() << std::endl;
 
     for (int i = 16; i < 26; i++)
-        std::cout << "Zoom " << std::setw(2) << i << " : " << std::setw(6) << Tile::getMetersPerTileAt(i) << "m" << std::endl;
+        std::cout << "Zoom " << std::setw(2) << i << " : " << std::setw(6) << hypatia::Tile::getMetersPerTileAt(i) << "m" << std::endl;
  
-    std::cout <<  tile.getProviderURL(NEXTZEN_JSON) << std::endl;
-    std::cout <<  tile.getProviderURL(NEXTZEN_MVT) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::NEXTZEN_JSON) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::NEXTZEN_MVT) << std::endl;
     
-    std::cout <<  tile.getProviderURL(OSM) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::OSM) << std::endl;
 
-    std::cout <<  tile.getProviderURL(BING) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::BING) << std::endl;
 
-    std::cout <<  tile.getProviderURL(MICROSOFT_BASE) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::MICROSOFT_BASE) << std::endl;
 
-    std::cout <<  tile.getProviderURL(STAMEN_TONER) << std::endl;
-    std::cout <<  tile.getProviderURL(STAMEN_TONER_HYBRID) << std::endl;
-    std::cout <<  tile.getProviderURL(STAMEN_TONER_LABELS) << std::endl;
-    std::cout <<  tile.getProviderURL(STAMEN_TONER_LINES) << std::endl;
-    std::cout <<  tile.getProviderURL(STAMEN_TONER_BACKGROUND) << std::endl;
-    std::cout <<  tile.getProviderURL(STAMEN_TERRAIN) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TONER) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TONER_HYBRID) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TONER_LABELS) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TONER_LINES) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TONER_BACKGROUND) << std::endl;
+    std::cout <<  tile.getProviderURL(hypatia::STAMEN_TERRAIN) << std::endl;
     return 0;
 }

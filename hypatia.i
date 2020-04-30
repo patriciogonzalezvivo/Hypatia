@@ -80,6 +80,8 @@
 %include "include/hypatia/Satellite.h"
 %include "include/hypatia/models/TLE.h"
 
+using namespace hypatia;
+
 namespace std {
     %template(VectorInt) vector<int>;
     %template(VectorEquatorial) vector<Equatorial>;

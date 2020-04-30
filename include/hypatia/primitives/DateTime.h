@@ -2,6 +2,8 @@
 
 #include "TimeSpan.h"
 
+namespace hypatia {
+
 /**
  *  @brief Represents an instance in time.
  *  Default contructor initialise to 0001/01/01 00:00:00.000000
@@ -67,4 +69,6 @@ inline std::ostream& operator<<(std::ostream& strm, const DateTime& _dt) {
     strm << std::setw(2) << _dt.getSecond() << ".";
     strm << std::setw(6) << _dt.getMicrosecond() << " UTC";
     return strm;
+}
+
 }

@@ -9,6 +9,8 @@
 
 #include <cmath>
 
+using namespace hypatia;
+
 const int64_t TimeSpan::TICKS_PER_DAY =  86400000000LL;
 const int64_t TimeSpan::TICKS_PER_HOUR =  3600000000LL;
 const int64_t TimeSpan::TICKS_PER_MINUTE =  60000000LL;

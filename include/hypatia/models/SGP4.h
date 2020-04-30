@@ -20,6 +20,8 @@
 #include "Orbit.h"
 #include "../coordinates/ECI.h"
 
+namespace hypatia {
+
 /**
  * @brief The simplified perturbations model 4 propagater.
  */
@@ -265,4 +267,6 @@ inline std::ostream& operator<<(std::ostream& strm, const SGP4& s) {
     strm << std::right << std::fixed;
     strm << "Satelite:         " << std::endl;
     return strm;
+}
+
 }

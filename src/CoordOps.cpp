@@ -22,6 +22,8 @@
 
 #define USE_SOLAR_LON 0
 
+using namespace hypatia;
+
 const double CoordOps::SPEED_OF_LIGHT = 299792.458;
 
 const double CoordOps::KM_TO_AU = 0.000000006684587;

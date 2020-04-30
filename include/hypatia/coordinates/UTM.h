@@ -2,6 +2,8 @@
 
 #include <iomanip>
 
+namespace hypatia {
+
 class UTM {
 public:
     UTM() {};
@@ -21,4 +23,6 @@ inline std::ostream& operator<<(std::ostream& strm, const UTM& _utm) {
     strm << ", easting: " << _utm.easting;
     strm << ", northing: " << _utm.northing;
     return strm;
+}
+
 }

@@ -3,6 +3,8 @@
 #include "../MathOps.h"
 #include <iomanip>
 
+namespace hypatia {
+
 class Polar {
 public:
     Polar();
@@ -29,3 +31,4 @@ inline std::ostream& operator<<(std::ostream& strm, const Polar& p) {
     return strm;
 }
 
+}

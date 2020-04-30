@@ -12,6 +12,8 @@
 
 #include "../Body.h"  // for enum Body
 
+namespace hypatia {
+
 // * * * * * simple support structs * * * * *
 
 // One VSOP term
@@ -64,3 +66,5 @@ public:
         rad = calcLoc( cen, planet, RADIUS );
     }
 };  // end class Vsop
+
+}

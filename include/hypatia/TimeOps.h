@@ -10,6 +10,8 @@
 // calendars:
 #define CALENDARS_OF_THE_WORLD
 
+namespace hypatia {
+
 typedef char MonthDays[13];
 typedef long YearEndDays[2];
 
@@ -577,3 +579,5 @@ private:
     // ---------------------------------------------------------------------------
 
 };
+
+}

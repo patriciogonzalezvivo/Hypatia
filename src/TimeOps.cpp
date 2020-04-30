@@ -9,6 +9,8 @@
 #include <chrono>
 #include <iostream>
 
+using namespace hypatia;
+
 const double TimeOps::TROPICAL_YEAR = 365.242195601852;
 const double TimeOps::JULIAN_EPOCH = 2440587.5;
 const double TimeOps::MJULIAN_EPOCH = 40587.0;

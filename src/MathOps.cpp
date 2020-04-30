@@ -3,6 +3,8 @@
 #include <math.h>
 #include <stdio.h>
 
+using namespace hypatia;
+
 // In-class constants cannot be initialized in the class declaration. Sigh.
 //
 

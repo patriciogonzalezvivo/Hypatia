@@ -10,6 +10,8 @@
 #include <iomanip>
 #include <string>
 
+namespace hypatia {
+
 /**
  * @brief Processes a two-line element set used to convey OrbitalElements.
  *
@@ -92,3 +94,4 @@ inline std::ostream& operator<<(std::ostream& strm, const TLE& t) {
     return strm;
 }
 
+}

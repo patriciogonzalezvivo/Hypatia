@@ -9,6 +9,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 Polar::Polar() : m_phi(0.0),  m_theta(0.0) {
 }
 

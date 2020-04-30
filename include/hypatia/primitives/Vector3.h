@@ -2,6 +2,8 @@
 
 #include "Polar.h"
 
+namespace hypatia {
+
 class Vector3 {
 public:
     Vector3();
@@ -60,4 +62,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Vector3& v) {
     strm << "," << std::setw(8) << v.z;
 
     return strm;
+}
+
 }

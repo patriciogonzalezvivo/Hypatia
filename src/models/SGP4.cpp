@@ -24,6 +24,8 @@
 #include <cmath>
 #include <iomanip>
 
+using namespace hypatia;
+
 const double kAE = 1.0;
 const double kQ0 = 120.0;
 const double kS0 = 78.0;

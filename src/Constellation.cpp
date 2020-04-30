@@ -9,6 +9,8 @@
 #include <ctype.h>
 #include <math.h>
 
+using namespace hypatia;
+
 /*
 ======================================================================
 Ernie Wright  2 Mar 94

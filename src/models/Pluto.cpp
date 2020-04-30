@@ -14,6 +14,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 // long coefficients
 long plutoLongCoeff[7][6] = {
     {  68955876,  66867334, -14974876,  -5453098,  19848454, -19798886 },

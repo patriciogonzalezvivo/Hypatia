@@ -5,6 +5,8 @@
 
 #include "primitives/Vector2.h"
 
+namespace hypatia {
+
 enum ProjId {
     POLAR=0, FISHEYE=1, ORTHO=2,
     STEREO=3, LAMBERT=4, EQUIRECTANGULAR=5
@@ -39,3 +41,6 @@ public:
     static void toMercator( double _lng, double _lat, double &_x, double &_y );
     static Vector2 toMercator( const Geodetic& _coord );
 };
+
+}
+

@@ -3,6 +3,8 @@
 #include "Body.h"
 #include "models/SGP4.h"
 
+namespace hypatia {
+
 class Satellite : public Body {
 public:
     Satellite();
@@ -29,3 +31,4 @@ protected:
     std::string m_name;
 };
 
+}

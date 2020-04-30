@@ -7,6 +7,8 @@
 
 #include "hypatia/models/VSOP87.h"
 
+using namespace hypatia;
+
 Observer::Observer(double _jd) :
 m_jd(0.0),
 m_jcentury(0.0),

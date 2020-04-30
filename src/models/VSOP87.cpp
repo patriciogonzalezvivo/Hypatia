@@ -13,6 +13,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 /*
  * VSOP data
  *

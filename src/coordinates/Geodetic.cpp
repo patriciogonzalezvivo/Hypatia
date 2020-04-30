@@ -3,6 +3,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 Geodetic::Geodetic () : m_alt(0.0) {
 }
 

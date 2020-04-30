@@ -8,6 +8,8 @@
 
 #include "TLE.h"
 
+namespace hypatia {
+
 class Orbit {
 public:
     Orbit();
@@ -76,3 +78,4 @@ inline std::ostream& operator<<(std::ostream& strm, const Orbit& o) {
     return strm;
 }
 
+}

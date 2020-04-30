@@ -3,6 +3,8 @@
 #include "hypatia/CoordOps.h"
 #include <math.h>
 
+using namespace hypatia;
+
 Ecliptic::Ecliptic() : m_radius(1.0) {
 }
 

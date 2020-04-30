@@ -14,6 +14,9 @@
 // #include "CoordOps.h"
 #include "Body.h"
 
+namespace hypatia {
+
+
 // A struct to hold the fundmental elements
 // The member names should be familiar to Meeus fans ;-)
 //
@@ -58,3 +61,4 @@ private:
     double m_age, m_posAngle, m_distance;
 };
 
+}

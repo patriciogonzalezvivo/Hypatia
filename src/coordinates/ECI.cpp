@@ -12,6 +12,8 @@
 
 #include <math.h>
 
+using namespace hypatia;
+
 ECI::ECI() {
     
 }

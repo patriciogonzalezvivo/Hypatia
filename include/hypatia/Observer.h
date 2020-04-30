@@ -11,6 +11,8 @@
 #include "TimeOps.h"
 #include "coordinates/Geodetic.h"
 
+namespace hypatia {
+
 // * * * * * Observer's Location Info * * * * *
 class Observer {
 public:
@@ -58,4 +60,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Observer& o) {
         strm << ", lst:" << std::setw(8) << MathOps::formatAngle(o.getLST(), DEGS, Dd);
     }
     return strm;
+}
+
 }

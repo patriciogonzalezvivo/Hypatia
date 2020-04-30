@@ -3,6 +3,8 @@
 #include <stdint.h>
 #include <iomanip>
 
+namespace hypatia {
+
 /**
  * @brief Represents a time interval.
  *
@@ -79,4 +81,6 @@ inline std::ostream& operator<<(std::ostream& strm, const TimeSpan& _ts) {
     }
     
     return strm;
+}
+
 }

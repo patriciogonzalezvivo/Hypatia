@@ -5,6 +5,8 @@
 #include <iomanip>
 #include <string>
 
+namespace hypatia {
+
 /* An immutable identifier for a map tile
  *
  * Contains the column, row, and zoom indices of a tile in a quad tree; Tiles are ordered by:
@@ -92,4 +94,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Tile& p) {
     strm << std::setprecision(3);
     strm << p.getZoom() << "/" << p.getColumn() << "/" << p.getRow();
     return strm;
+}
+
 }

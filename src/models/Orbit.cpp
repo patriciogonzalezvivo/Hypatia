@@ -12,6 +12,8 @@
 
 #include "hypatia/models/Orbit.h"
 
+using namespace hypatia;
+
 const double kAE = 1.0;
 const double kXJ2 = 1.082616e-3;
 

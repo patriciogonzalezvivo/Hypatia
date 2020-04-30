@@ -5,6 +5,8 @@
 
 #include "../primitives/Vector3.h"
 
+namespace hypatia {
+
 class Galactic : public Polar {
 public:
     Galactic ();
@@ -35,3 +37,4 @@ inline std::ostream& operator<<(std::ostream& strm, const Galactic& p) {
     return strm;
 }
 
+}

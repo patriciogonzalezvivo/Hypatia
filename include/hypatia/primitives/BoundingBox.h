@@ -6,6 +6,9 @@
 
 #include "Vector2.h"
 
+namespace hypatia {
+
+
 struct BoundingBox {
 
     Vector2 min;
@@ -38,4 +41,6 @@ inline std::ostream& operator<<(std::ostream& strm, const BoundingBox& bb) {
     strm << " max: " << std::setw(8) << bb.max.x;
     strm << "," << std::setw(8) << bb.max.y;
     return strm;
+}
+
 }

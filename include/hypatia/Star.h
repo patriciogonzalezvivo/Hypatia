@@ -7,6 +7,8 @@
 
 #define USE_HIPPACOS_EXTRADATA
 
+namespace hypatia {
+
 enum STAR_CATALOG {
     ASTRO, HIP 
 };
@@ -71,4 +73,6 @@ inline std::ostream& operator<<(std::ostream& strm, const Star& s) {
     strm << s.getEquatorial() << ", ";
     strm << s.getHorizontal();
     return strm;
+}
+
 }

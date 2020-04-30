@@ -3,6 +3,8 @@
 #include "hypatia/CoordOps.h"
 #include <string.h>
 
+using namespace hypatia;
+
 #define N_STARS 2826
 const int Star::TOTAL = N_STARS;
 
